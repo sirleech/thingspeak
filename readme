@@ -1,0 +1,3 @@
+Here’s a short tutorial on getting Python talking to the new ThingSpeak data logging web service. ThingSpeak joins the ranks of Pachube.com allowing web citizens to upload their data from devices, computers, and sensors using a RESTful web service. ThingSpeak out of the box comes with a beautiful chart visualisation API that features real-time updates. In this blog post we’ll use Python to connect to ThingSpeak and send our computer’s available memory and CPU usage, then visualise the data in real-time using the ThingSpeak Charts API. Watch the examples below for some real-time updates!
+
+http://www.australianrobotics.com.au/node/292
