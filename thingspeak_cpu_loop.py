@@ -8,7 +8,6 @@ def doit():
 	mem_avail_mb = psutil.avail_phymem()/1000000
 	print cpu_pc
 	print mem_avail_mb
-	
 	params = urllib.urlencode({'field1': cpu_pc, 'field2': mem_avail_mb,'key':'YOUR_API_KEY'})
 	headers = {"Content-type": "application/x-www-form-urlencoded","Accept": "text/plain"}
 	conn = httplib.HTTPConnection("api.thingspeak.com:80")
@@ -16,10 +15,10 @@ def doit():
 	response = conn.getresponse()
 	print response.status, response.reason
 	data = response.read()
-	conn.close()     
+	conn.close()
 
-#sleep for N seconds (api limit of 15 secs)
-while True:
-	doit()
-	time.sleep(15) 
-
+#sleep for 16 seconds (api limit of 15 secs)
+if __name__ == "__main__":
+	while True:
+		doit()
+		time.sleep(16) 
