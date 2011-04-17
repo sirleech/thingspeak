@@ -19,7 +19,7 @@ def doit():
 		data = response.read()
 		conn.close()
 	except socket.error:
-		"socket error, connection failed"	
+		print "socket error, connection failed"	
 
 #sleep for 16 seconds (api limit of 15 secs)
 if __name__ == "__main__":
